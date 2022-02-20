@@ -2,7 +2,7 @@ module.exports = {
   validateUser: (req, res, next) => {
     const { username, passwordOne, passwordTwo } = req.body;
 
-    if (username.length < 5 || username.length > 10) {
+    if (username.length < 5 || username.length > 15) {
       return res.send({ error: true, message: "please check username" });
     }
     if (passwordOne.length < 3 || passwordOne.length > 20) {
