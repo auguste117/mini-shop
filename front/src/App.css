@@ -1,0 +1,183 @@
+.toolbar {
+  padding: 20px;
+  background-color: #332d2d;
+  color: rgb(22, 13, 13);
+  display: flex;
+  justify-content: space-around;
+}
+.toolbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.error {
+  color: red;
+  font-size: 25px;
+}
+.App {
+  margin-top: 10px;
+}
+.all-recipes {
+  margin: 10px;
+}
+.d-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sp-around {
+  justify-content: space-around;
+}
+.column {
+  flex-direction: column;
+}
+.card {
+  display: flex;
+  background-color: #a2a6ad;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.review {
+  display: flex;
+  background-color: #a2a6ad;
+  padding: 10px;
+  margin: 5px;
+  overflow: hidden;
+}
+.review div {
+  margin: 10px;
+}
+
+.card:hover {
+  background-color: #533d3d;
+  color: white;
+}
+button:hover {
+  color: #0a0808;
+  background-color: rgb(175, 170, 170);
+}
+img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.single-item {
+  padding: 40px;
+  background-color: #a2a6ad;
+  align-items: center;
+  margin: 0 auto;
+}
+.inputs {
+  flex-direction: column;
+  align-items: center;
+}
+.inputs button {
+  max-width: 200px;
+  margin: 0 auto;
+}
+input {
+  padding: 10px;
+  margin-bottom: 20px;
+  width: 400px;
+}
+button {
+  margin: 10px;
+  padding: 15px;
+  background-color: #332d2d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+.single-item img {
+  width: 300px;
+  height: 300px;
+  position: initial;
+  border-radius: 0%;
+}
+.i-width {
+  width: 100%;
+  justify-content: center;
+}
+
+/*TABLET*/
+
+@media screen and (min-width: 768px) {
+  .conteiner {
+    flex-direction: row;
+  }
+  .d-flex {
+    justify-content: center;
+  }
+  .card {
+    width: 40%;
+    flex-direction: column;
+    height: 400px;
+  }
+  .review {
+    width: 40%;
+    flex-direction: column;
+    height: 500px;
+    padding: 10px;
+    margin: 15px;
+  }
+
+  img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+  }
+  .single-item {
+    max-width: 800px;
+  }
+  input {
+    margin: 20px;
+  }
+  button {
+    margin: 20px;
+  }
+  .column {
+    align-items: center;
+  }
+}
+
+/*DESKTOP*/
+@media screen and (min-width: 1140px) {
+  /*--header*/
+  /*--main*/
+  .toolbar {
+    padding: 20px;
+    margin: 0 px 20px;
+  }
+  .d-flex {
+    flex-direction: row;
+  }
+  .card {
+    justify-content: center;
+    padding: 10px;
+    margin: 15px;
+    width: 350px;
+    height: 400px;
+  }
+  .review {
+    justify-content: center;
+    width: 350px;
+    height: 550px;
+  }
+
+  .single-item {
+    margin-top: 10px;
+  }
+  input {
+    width: 500px;
+  }
+  .inputs {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
